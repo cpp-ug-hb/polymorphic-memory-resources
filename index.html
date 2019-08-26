@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Polymorphic Memory Resources</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -25,8 +25,34 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+						<textarea data-template>
+							#### Polymorphic Memory Resources
+							#### Finn Haedicke
+							#### C++ User-Group Bremen
+						</textarea>
+					</section>
+
+					<section data-background="#212121">
+						<section data-separator-notes="^Note:"
+							data-vertical="^---\n"
+							data-markdown="overview.md">
+						</section>
+					</section>
+
+					<section data-background="#212121">
+						<section data-separator-notes="^Note:"
+							data-vertical="^---\n"
+							data-markdown="counting_memory.md">
+						</section>
+					</section>
+	
+					<section data-background="#212121">
+						<section data-separator-notes="^Note:"
+							data-vertical="^---\n"
+							data-markdown="summary.md">
+						</section>
+					</section>
 			</div>
 		</div>
 
@@ -37,6 +63,9 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				slideNumber: true,
+				fragmentInURL: true,
+				hash: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
